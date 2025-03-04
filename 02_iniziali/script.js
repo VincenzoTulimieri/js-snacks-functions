@@ -5,18 +5,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function inizials(){
+function inizials(elements){
     const newArray =[]
-    for(let i = 0; i < names.length; i++){
-        let iniziale = names[i]
-        newArray.push(iniziale[0])
+    for(let i = 0; i < elements.length; i++){
+        let list = elements[i]
+        newArray.push(list[0])
     }
     return newArray
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-let newArray = inizials()
+let newArray = inizials(names)
 console.log(newArray)
 
 

@@ -5,17 +5,19 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-function greetings() { 
-    return 'ciao'
+function greetings(name) { 
+    //return 'ciao'
+    return `Ciao ${name}`
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 greetings()
-const hi = greetings() 
+const hi = greetings(userName) 
+console.log(hi)
 
-const hello = hi + ' ' + userName
-console.log(hello)
+// const hello = hi + ' ' + userName
+// console.log(hello)
 
 
 
